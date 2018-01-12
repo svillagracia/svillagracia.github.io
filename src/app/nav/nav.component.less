@@ -1,0 +1,82 @@
+@import '../../assets/less/variables.less';
+
+div.row {
+
+  div.col-md-3.icons {
+    height: 100vh;
+    background: #333333;
+
+    ul {
+      color: #ADADAD;
+      font-size: 25px;
+      list-style: none;
+      padding: 5px 0 0 15px;
+      text-align: center;
+
+      li {
+        margin-bottom: 15px;
+
+        &.files { color: @white; }
+      }
+    }
+  }
+
+  div.col-md-9.sidebar {
+    padding: 0;
+    position: relative;
+      height: 100vh;
+
+    div.explorer {
+      padding: 7px 0 0 27px;
+
+      p {
+        color: @white;
+        font-weight: 300;
+      }
+    }
+
+    div.root {
+      background: #383838;
+      cursor: default;
+        height: 30px;
+        width: 100%;
+
+      p.folder {
+        color: @white;
+        font-weight: 600;
+        letter-spacing: 1px;
+        padding: 5px 0 0 10px;
+      }
+    }
+
+    ul {
+      list-style: none;
+      padding: 0 0 0 42px;
+
+      li {
+
+        &.projects {
+          cursor: default;
+        }
+
+        a {
+          color: @white;
+          text-decoration: none;
+
+          p {
+            margin: 3px 0;
+          }
+        }
+        p {
+          color: @white;
+          margin: 3px 0 0 -14px;
+        }
+      }
+    }
+    div.copy {
+      position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+<div class="row">
+  <div class="col-md-3 icons">
+    <ul>
+      <li class="files">
+        <i class="fa fa-files-o"></i>
+      </li>
+      <li>
+        <i class="fa fa-search"></i>
+      </li>
+      <li>
+        <i class="fa fa-code-fork"></i>
+      </li>
+      <li>
+        <i class="fa fa-bug"></i>
+      </li>
+    </ul>
+  </div>
+  <div class="col-md-9 sidebar">
+    <div class="explorer">
+      <p>EXPLORER</p>
+    </div>
+    <div class="root" (click)="openRoot = !openRoot">
+      <p class="folder">
+        <i *ngIf="!openRoot" class="fa fa-caret-right"></i><i *ngIf="openRoot" class="fa fa-caret-down"></i> PORTFOLIO
+      </p>
+    </div>
+    <ul *ngIf="openRoot">
+      <li>
+        <a [routerLink]="['']">
+          <p><i class="fa fa-file-o"></i> homepage.comp...</p>
+        </a>
+      </li>
+      <li>
+        <a [routerLink]="['about']">
+          <p><i class="fa fa-file-o"></i> about.compone...</p>
+        </a>
+      </li>
+      <li>
+        <a [routerLink]="['repertoire']">
+          <p><i class="fa fa-file-o"></i> repertoire.co...</p>
+        </a>
+      </li>
+      <li class="projects" (click)="projects = !projects">
+        <p>
+          <i *ngIf="!projects" class="fa fa-caret-right"></i><i *ngIf="projects" class="fa fa-caret-down"></i>
+          <i *ngIf="!projects" class="fa fa-folder-o"></i><i *ngIf="projects" class="fa fa-folder-open-o"></i> projects
+        </p>
+      </li>
+      <li>
+        <a href="https://resume.creddle.io/resume/i1guhgbqeko" target="blank">
+          <p><i class="fa fa-file-o"></i> resum&eacute;.pdf</p>
+        </a>
+      </li>
+    </ul>
+    <div class="copy">
+      <app-footer></app-footer>
+    </div>
+  </div>
+</div>

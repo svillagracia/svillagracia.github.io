@@ -1,0 +1,43 @@
+@import (reference) '../../assets/less/variables.less';
+
+div.home.row {
+  background: @sunclay;
+
+  div.col-md-5.col-md-offset-3.typewriter.name {
+    text-align: center;
+
+    h1 {
+      color: @white;
+      font-size: 2em;
+      margin: 50px 0 50px 0;
+        height: 33px;
+    }
+
+    img {
+      border-radius: 100%;
+        height: 500px;
+        width: 500px;
+    }
+
+    div.descriptors {
+      margin-top: 50px;
+      text-align: left;
+
+      h3 {
+        margin: 0 0 5px 0;
+      }
+    }
+  }
+
+  span {
+    &.dec {
+      color: @bounded;
+      font-style: italic;
+    }
+    &.glo { color: @henn; }
+    &.var { color: @white; }
+    &.eq { color: @orchid; }
+    &.bool { color: @purple; }
+    &.string { color: @yellow; }
+  }
+}
