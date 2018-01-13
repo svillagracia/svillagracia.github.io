@@ -1,0 +1,551 @@
+@import (reference) '../../assets/less/variables.less';
+
+div.skill {
+  color: @white;
+  display: block;
+  margin-bottom: 20px;
+
+  h3 {
+    display: block;
+    font-size: 1.55em;
+    line-height: 1.4em;
+    margin-bottom: 2px;
+
+    span.string { color: @yellow; }
+    span.colon { color: @orchid; }
+  }
+
+  span.bar {
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    width: 500px;
+    padding: 3px 4px;
+    box-sizing: content-box;
+    border-radius: 6px;
+    border: 1px solid @white;
+    background-color: @sunclay;
+
+    span.skillbar {
+      display: block;
+      height: 100%;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.1em;
+      color: @sunclay;
+      text-shadow: 1px 1px 0 rgba(255,255,255,0.55);
+      border-radius: 4px;
+
+      &.htmlcss {
+        animation: htmlcss 1.5s ease-in-out forwards;
+        background-image: linear-gradient(to left top, @orchid, @orchid);
+      }
+      &.javascript {
+        animation: javascript 1.5s ease-in-out forwards;
+        background-image: linear-gradient(to left top, @bounded, @bounded);
+      }
+      &.angular2 {
+        animation: angular2 1.5s ease-in-out forwards;
+        background-image: linear-gradient(to left top, @pumpkin, @pumpkin);
+      }
+      &.lesssass {
+        animation: lesssass 1.5s ease-in-out forwards;
+        background-image: linear-gradient(to left top, @purple, @purple);
+      }
+      &.postgres {
+        animation: postgres 1.5s ease-in-out forwards;
+        background-image: linear-gradient(to left top, @yellow, @yellow);
+      }
+      &.node {
+        animation: node 1.5s ease-in-out forwards;
+        background-image: linear-gradient(to left top, @henn, @henn);
+      }
+      &.express {
+        animation: express 1.5s ease-in-out forwards;
+        background-image: linear-gradient(to left top, @orchid, @orchid);
+      }
+      &.typescript {
+        animation: typescript 1.5s ease-in-out forwards;
+        background-image: linear-gradient(to left top, @bounded, @bounded);
+      }
+      &.rxjs {
+        animation: rxjs 1.5s ease-in-out forwards;
+        background-image: linear-gradient(to left top, @pumpkin, @pumpkin);
+      }
+      &.mvc {
+        animation: mvc 1.5s ease-in-out forwards;
+        background-image: linear-gradient(to left top, @purple, @purple);
+      }
+      &.tdd {
+        animation: tdd 1.5s ease-in-out forwards;
+        background-image: linear-gradient(to left top, @yellow, @yellow);
+      }
+      &.ajax {
+        animation: ajax 1.5s ease-in-out forwards;
+        background-image: linear-gradient(to left top, @henn, @henn);
+      }
+      &.api {
+        animation: api 1.5s ease-in-out forwards;
+        background-image: linear-gradient(to left top, @orchid, @orchid);
+      }
+      &.mongo {
+        animation: mongo 1.5s ease-in-out forwards;
+        background-image: linear-gradient(to left top, @bounded, @bounded);
+      }
+      &.oauth {
+        animation: oauth 1.5s ease-in-out forwards;
+        background-image: linear-gradient(to left top, @pumpkin, @pumpkin);
+      }
+      &.git {
+        animation: git 1.5s ease-in-out forwards;
+        background-image: linear-gradient(to left top, @purple, @purple);
+      }
+      &.bootstrap {
+        animation: bootstrap 1.5s ease-in-out forwards;
+        background-image: linear-gradient(to left top, @yellow, @yellow);
+      }
+      &.ror {
+        animation: ror 1.5s ease-in-out forwards;
+        background-image: linear-gradient(to left top, @henn, @henn);
+      }
+      &.react {
+        animation: react 1.5s ease-in-out forwards;
+        background-image: linear-gradient(to left top, @orchid, @orchid);
+      }
+      &.deployment {
+        animation: deployment 1.5s ease-in-out forwards;
+        background-image: linear-gradient(to left top, @bounded, @bounded);
+      }
+      &.ci {
+        animation: ci 1.5s ease-in-out forwards;
+        background-image: linear-gradient(to left top, @pumpkin, @pumpkin);
+      }
+      &.aws {
+        animation: aws 1.5s ease-in-out forwards;
+        background-image: linear-gradient(to left top, @purple, @purple);
+      }
+      &.heroku {
+        animation: heroku 1.5s ease-in-out forwards;
+        background-image: linear-gradient(to left top, @yellow, @yellow);
+      }
+      &.pm {
+        animation: pm 1.5s ease-in-out forwards;
+        background-image: linear-gradient(to left top, @henn, @henn);
+      }
+      &.agile {
+        animation: agile 1.5s ease-in-out forwards;
+        background-image: linear-gradient(to left top, @orchid, @orchid);
+      }
+      &.teambuilding {
+        animation: teambuilding 1.5s ease-in-out forwards;
+        background-image: linear-gradient(to left top, @bounded, @bounded);
+      }
+      &.cr {
+        animation: cr 1.5s ease-in-out forwards;
+        background-image: linear-gradient(to left top, @pumpkin, @pumpkin);
+      }
+      &.bizdev {
+        animation: bizdev 1.5s ease-in-out forwards;
+        background-image: linear-gradient(to left top, @purple, @purple);
+      }
+      &.rm {
+        animation: rm 1.5s ease-in-out forwards;
+        background-image: linear-gradient(to left top, @yellow, @yellow);
+      }
+      &.strategy {
+        animation: strategy 1.5s ease-in-out forwards;
+        background-image: linear-gradient(to left top, @henn, @henn);
+      }
+    }
+  }
+}
+
+@-moz-keyframes htmlcss {
+  0%   { width: 35px; }
+  100% { width: 85%; }
+}
+@-webkit-keyframes htmlcss {
+  0%   { width: 35px; }
+  100% { width: 85%; }
+}
+@keyframes htmlcss {
+  0%   { width: 35px; }
+  100% { width: 85%; }
+}
+
+@-moz-keyframes javascript {
+  0%   { width: 35px; }
+  100% { width: 80%; }
+}
+@-webkit-keyframes javascript {
+  0%   { width: 35px; }
+  100% { width: 80%; }
+}
+@keyframes javascript {
+  0%   { width: 35px; }
+  100% { width: 80%; }
+}
+
+@-moz-keyframes angular2 {
+  0%   { width: 35px; }
+  100% { width: 90%; }
+}
+@-webkit-keyframes angular2 {
+  0%   { width: 35px; }
+  100% { width: 90%; }
+}
+@keyframes angular2 {
+  0%   { width: 35px; }
+  100% { width: 90%; }
+}
+
+@-moz-keyframes lesssass {
+  0%   { width: 35px; }
+  100% { width: 70%; }
+}
+@-webkit-keyframes lesssass {
+  0%   { width: 35px; }
+  100% { width: 70%; }
+}
+@keyframes lesssass {
+  0%   { width: 35px; }
+  100% { width: 70%; }
+}
+
+@-moz-keyframes postgres {
+  0%   { width: 35px; }
+  100% { width: 60%; }
+}
+@-webkit-keyframes postgres {
+  0%   { width: 35px; }
+  100% { width: 60%; }
+}
+@keyframes postgres {
+  0%   { width: 35px; }
+  100% { width: 60%; }
+}
+
+@-moz-keyframes node {
+  0%   { width: 35px; }
+  100% { width: 75%; }
+}
+@-webkit-keyframes node {
+  0%   { width: 35px; }
+  100% { width: 75%; }
+}
+@keyframes node {
+  0%   { width: 35px; }
+  100% { width: 75%; }
+}
+
+@-moz-keyframes express {
+  0%   { width: 35px; }
+  100% { width: 80%; }
+}
+@-webkit-keyframes express {
+  0%   { width: 35px; }
+  100% { width: 80%; }
+}
+@keyframes express {
+  0%   { width: 35px; }
+  100% { width: 80%; }
+}
+
+@-moz-keyframes typescript {
+  0%   { width: 35px; }
+  100% { width: 80%; }
+}
+@-webkit-keyframes typescript {
+  0%   { width: 35px; }
+  100% { width: 80%; }
+}
+@keyframes typescript {
+  0%   { width: 35px; }
+  100% { width: 80%; }
+}
+
+@-moz-keyframes rxjs {
+  0%   { width: 35px; }
+  100% { width: 55%; }
+}
+@-webkit-keyframes rxjs {
+  0%   { width: 35px; }
+  100% { width: 55%; }
+}
+@keyframes rxjs {
+  0%   { width: 35px; }
+  100% { width: 55%; }
+}
+
+@-moz-keyframes mvc {
+  0%   { width: 35px; }
+  100% { width: 80%; }
+}
+@-webkit-keyframes mvc {
+  0%   { width: 35px; }
+  100% { width: 80%; }
+}
+@keyframes mvc {
+  0%   { width: 35px; }
+  100% { width: 80%; }
+}
+
+@-moz-keyframes tdd {
+  0%   { width: 35px; }
+  100% { width: 65%; }
+}
+@-webkit-keyframes tdd {
+  0%   { width: 35px; }
+  100% { width: 65%; }
+}
+@keyframes tdd {
+  0%   { width: 35px; }
+  100% { width: 65%; }
+}
+
+@-moz-keyframes ajax {
+  0%   { width: 35px; }
+  100% { width: 80%; }
+}
+@-webkit-keyframes ajax {
+  0%   { width: 35px; }
+  100% { width: 80%; }
+}
+@keyframes ajax {
+  0%   { width: 35px; }
+  100% { width: 80%; }
+}
+
+@-moz-keyframes api {
+  0%   { width: 35px; }
+  100% { width: 75%; }
+}
+@-webkit-keyframes api {
+  0%   { width: 35px; }
+  100% { width: 75%; }
+}
+@keyframes api {
+  0%   { width: 35px; }
+  100% { width: 75%; }
+}
+
+@-moz-keyframes mongo {
+  0%   { width: 35px; }
+  100% { width: 60%; }
+}
+@-webkit-keyframes mongo {
+  0%   { width: 35px; }
+  100% { width: 60%; }
+}
+@keyframes mongo {
+  0%   { width: 35px; }
+  100% { width: 60%; }
+}
+
+@-moz-keyframes oauth {
+  0%   { width: 35px; }
+  100% { width: 55%; }
+}
+@-webkit-keyframes oauth {
+  0%   { width: 35px; }
+  100% { width: 55%; }
+}
+@keyframes oauth {
+  0%   { width: 35px; }
+  100% { width: 55%; }
+}
+
+@-moz-keyframes git {
+  0%   { width: 35px; }
+  100% { width: 95%; }
+}
+@-webkit-keyframes git {
+  0%   { width: 35px; }
+  100% { width: 95%; }
+}
+@keyframes git {
+  0%   { width: 35px; }
+  100% { width: 95%; }
+}
+
+@-moz-keyframes bootstrap {
+  0%   { width: 35px; }
+  100% { width: 80%; }
+}
+@-webkit-keyframes bootstrap {
+  0%   { width: 35px; }
+  100% { width: 80%; }
+}
+@keyframes bootstrap {
+  0%   { width: 35px; }
+  100% { width: 80%; }
+}
+
+@-moz-keyframes ror {
+  0%   { width: 35px; }
+  100% { width: 40%; }
+}
+@-webkit-keyframes ror {
+  0%   { width: 35px; }
+  100% { width: 40%; }
+}
+@keyframes ror {
+  0%   { width: 35px; }
+  100% { width: 40%; }
+}
+
+@-moz-keyframes react {
+  0%   { width: 35px; }
+  100% { width: 25%; }
+}
+@-webkit-keyframes react {
+  0%   { width: 35px; }
+  100% { width: 25%; }
+}
+@keyframes react {
+  0%   { width: 35px; }
+  100% { width: 25%; }
+}
+
+@-moz-keyframes deployment {
+  0%   { width: 35px; }
+  100% { width: 50%; }
+}
+@-webkit-keyframes deployment {
+  0%   { width: 35px; }
+  100% { width: 50%; }
+}
+@keyframes deployment {
+  0%   { width: 35px; }
+  100% { width: 50%; }
+}
+
+@-moz-keyframes ci {
+  0%   { width: 35px; }
+  100% { width: 35%; }
+}
+@-webkit-keyframes ci {
+  0%   { width: 35px; }
+  100% { width: 35%; }
+}
+@keyframes ci {
+  0%   { width: 35px; }
+  100% { width: 35%; }
+}
+
+@-moz-keyframes aws {
+  0%   { width: 35px; }
+  100% { width: 20%; }
+}
+@-webkit-keyframes aws {
+  0%   { width: 35px; }
+  100% { width: 20%; }
+}
+@keyframes aws {
+  0%   { width: 35px; }
+  100% { width: 20%; }
+}
+
+@-moz-keyframes heroku {
+  0%   { width: 35px; }
+  100% { width: 55%; }
+}
+@-webkit-keyframes heroku {
+  0%   { width: 35px; }
+  100% { width: 55%; }
+}
+@keyframes heroku {
+  0%   { width: 35px; }
+  100% { width: 55%; }
+}
+
+@-moz-keyframes pm {
+  0%   { width: 35px; }
+  100% { width: 60%; }
+}
+@-webkit-keyframes pm {
+  0%   { width: 35px; }
+  100% { width: 60%; }
+}
+@keyframes pm {
+  0%   { width: 35px; }
+  100% { width: 60%; }
+}
+
+@-moz-keyframes agile {
+  0%   { width: 35px; }
+  100% { width: 80%; }
+}
+@-webkit-keyframes agile {
+  0%   { width: 35px; }
+  100% { width: 80%; }
+}
+@keyframes agile {
+  0%   { width: 35px; }
+  100% { width: 80%; }
+}
+
+@-moz-keyframes teambuilding {
+  0%   { width: 35px; }
+  100% { width: 60%; }
+}
+@-webkit-keyframes teambuilding {
+  0%   { width: 35px; }
+  100% { width: 60%; }
+}
+@keyframes teambuilding {
+  0%   { width: 35px; }
+  100% { width: 60%; }
+}
+
+@-moz-keyframes cr {
+  0%   { width: 35px; }
+  100% { width: 80%; }
+}
+@-webkit-keyframes cr {
+  0%   { width: 35px; }
+  100% { width: 80%; }
+}
+@keyframes cr {
+  0%   { width: 35px; }
+  100% { width: 80%; }
+}
+
+@-moz-keyframes bizdev {
+  0%   { width: 35px; }
+  100% { width: 45%; }
+}
+@-webkit-keyframes bizdev {
+  0%   { width: 35px; }
+  100% { width: 45%; }
+}
+@keyframes bizdev {
+  0%   { width: 35px; }
+  100% { width: 45%; }
+}
+
+@-moz-keyframes rm {
+  0%   { width: 35px; }
+  100% { width: 55%; }
+}
+@-webkit-keyframes rm {
+  0%   { width: 35px; }
+  100% { width: 55%; }
+}
+@keyframes rm {
+  0%   { width: 35px; }
+  100% { width: 55%; }
+}
+
+@-moz-keyframes strategy {
+  0%   { width: 35px; }
+  100% { width: 55%; }
+}
+@-webkit-keyframes strategy {
+  0%   { width: 35px; }
+  100% { width: 55%; }
+}
+@keyframes strategy {
+  0%   { width: 35px; }
+  100% { width: 55%; }
+}

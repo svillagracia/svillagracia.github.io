@@ -8,6 +8,11 @@ import { ProjectsComponent } from './projects/projects.component';
 export const appRoutes: Routes = [
   {
     path: '',
+    redirectTo: 'homepage',
+    pathMatch: 'full'
+  },
+  {
+    path: 'homepage',
     component: HomeComponent,
   },
   {

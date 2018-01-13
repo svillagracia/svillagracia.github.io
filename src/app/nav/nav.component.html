@@ -19,24 +19,49 @@
     <div class="explorer">
       <p>EXPLORER</p>
     </div>
+    <div class="root">
+      <p class="folder" (click)="editors = !editors">
+        <i *ngIf="!editors" class="fa fa-caret-right"></i><i *ngIf="editors" class="fa fa-caret-down"></i> OPEN EDITORS
+      </p>
+    </div>
+    <ul *ngIf="editors">
+      <li>
+        <a [routerLink]="['homepage']" routerLinkActive="active">
+          <p>
+            <i class="fa fa-file-o"></i> homepage.comp...</p>
+        </a>
+      </li>
+      <li>
+        <a [routerLink]="['about']" routerLinkActive="active">
+          <p>
+            <i class="fa fa-file-o"></i> about.compone...</p>
+        </a>
+      </li>
+      <li>
+        <a [routerLink]="['repertoire']" routerLinkActive="active">
+          <p>
+            <i class="fa fa-file-o"></i> repertoire.co...</p>
+        </a>
+      </li>
+    </ul>
     <div class="root" (click)="openRoot = !openRoot">
       <p class="folder">
-        <i *ngIf="!openRoot" class="fa fa-caret-right"></i><i *ngIf="openRoot" class="fa fa-caret-down"></i> PORTFOLIO
+        <i *ngIf="!openRoot" class="fa fa-caret-right"></i><i *ngIf="openRoot" class="fa fa-caret-down"></i> SVILLAGRACIA.COM
       </p>
     </div>
     <ul *ngIf="openRoot">
       <li>
-        <a [routerLink]="['']">
+        <a [routerLink]="['homepage']" routerLinkActive="active">
           <p><i class="fa fa-file-o"></i> homepage.comp...</p>
         </a>
       </li>
       <li>
-        <a [routerLink]="['about']">
+        <a [routerLink]="['about']" routerLinkActive="active">
           <p><i class="fa fa-file-o"></i> about.compone...</p>
         </a>
       </li>
       <li>
-        <a [routerLink]="['repertoire']">
+        <a [routerLink]="['repertoire']" routerLinkActive="active">
           <p><i class="fa fa-file-o"></i> repertoire.co...</p>
         </a>
       </li>

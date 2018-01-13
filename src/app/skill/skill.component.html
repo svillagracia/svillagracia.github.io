@@ -1,0 +1,10 @@
+<div class="skill">
+  <h3>
+    {{ skillName }}<span class="colon">: </span><span class="string">'{{ years }} year<span *ngIf="years > 1 || years < 1">s</span>'</span>,
+  </h3>
+  <span class="bar">
+    <span [className]="'skillbar ' + skillClass">
+      {{ percentage }}%
+    </span>
+  </span>
+</div>

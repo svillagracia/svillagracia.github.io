@@ -51,7 +51,7 @@ div.row {
 
     ul {
       list-style: none;
-      padding: 0 0 0 42px;
+      padding: 0 0 0 0;
 
       li {
 
@@ -63,11 +63,17 @@ div.row {
           color: @white;
           text-decoration: none;
 
+          &.active {
+            p {background: #3F3F46; }
+          }
+
           p {
             margin: 3px 0;
           }
         }
+
         p {
+          padding-left: 42px;
           color: @white;
           margin: 3px 0 0 -14px;
         }

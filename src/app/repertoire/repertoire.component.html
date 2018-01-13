@@ -1,3 +1,18 @@
-<p>
-  repertoire works!
-</p>
+<div class="repertoire">
+  <div class="row">
+    <div class="col-md-12 skillset">
+      <h1><span class="dec">declare global </span><span class="glo">Repertoire </span>&#123;</h1>
+      <div class="row skills">
+        <div class="col-md-5" *ngFor="let skill of skills">
+          <app-skill
+            [skillName]="skill.name"
+            [skillClass]="skill.class"
+            [years]="skill.years"
+            [percentage]="skill.percentage">
+          </app-skill>
+        </div>
+      </div>
+      <h1>&#125;</h1>
+    </div>
+  </div>
+</div>

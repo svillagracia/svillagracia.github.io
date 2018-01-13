@@ -1,0 +1,46 @@
+@import (reference) '../../assets/less/variables.less';
+
+div.tab-nav {
+  background: #252526;
+  position: relative;
+    height: 37px;
+
+  ul.tabs {
+    list-style: none;
+    padding: 0;
+
+    a {
+      &.active {
+        li.tab {
+          background: #1A1A1A;
+        }
+      }
+
+      li.tab {
+        border-right: 1px solid #252526;
+        display: inline-block;
+        background: #2D2D2D;
+        text-align: center;
+          height: 37px;
+          width: 175px;
+
+        text-decoration: none;
+
+        p {
+          color: @white;
+          padding-top: 7px;
+            height: 100%;
+            width: 100%;
+        }
+      }
+    }
+  }
+
+  div.ellipsis {
+    color: @white;
+    font-size: 18px;
+    position: absolute;
+      top: 7px;
+      right: 10px;
+  }
+}
