@@ -1,0 +1,22 @@
+@import (reference) '../../assets/less/variables.less';
+
+div.about {
+  color: @white;
+  padding-left: 50px;
+
+  h1 {
+    margin-bottom: 1em;
+
+    span {
+      &.dec { color: @bounded; }
+      &.key { color: @orchid; }
+      &.string { color: @yellow; }
+    }
+  }
+
+  p.bio {
+    color: @yellow;
+    font-size: 1.5em;
+    margin: 0 0 1.5em 3em;
+  }
+}
