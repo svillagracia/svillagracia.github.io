@@ -1,3 +1,20 @@
-<p>
-  project-card works!
-</p>
+<div class="project-card">
+  <div class="preview"></div>
+  <div class="info">
+    <h4>'{{ project.name }}'</h4>
+    <p>
+      <span class="ob-key">year</span><span class="key">: </span><span class="int">{{ project.year }}</span><span class="ob-key">,</span>
+    </p>
+    <p>
+      <span class="ob-key">employer</span><span class="key">: </span> '{{ project.employer }}'<span class="ob-key">,</span>
+    </p>
+    <p>
+      <span class="ob-key">role</span><span class="key">: </span>
+      <span class="ob-key">[ </span>
+      <span *ngFor="let role of project.role; let last = last">
+        '{{ role }}'<span *ngIf="!last" class="ob-key">, </span>
+      </span>
+      <span class="ob-key"> ]</span>
+    </p>
+  </div>
+</div>

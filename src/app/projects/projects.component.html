@@ -1,3 +1,9 @@
-<p>
-  projects works!
-</p>
+<div class="projects col-md-12">
+  <h1>SeanVillagacia<span class="key">.</span>projects<span class="key"> = </span>&#123;</h1>
+  <div class="row list">
+    <div *ngFor="let project of projects" class="col-md-5">
+      <app-project-card [project]="project"></app-project-card>
+    </div>
+  </div>
+  <h1>&#125;;</h1>
+</div>

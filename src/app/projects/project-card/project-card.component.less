@@ -1,0 +1,41 @@
+@import (reference) '../../../assets/less/variables.less';
+
+div.project-card {
+  background: #2D2D2D;
+  box-shadow: 1px 1px #3F3F46;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: box-shadow 0.5s ease-in-out;
+  transition: transform 0.5s;
+    height: 320px;
+    width: 450px;
+
+  &:hover {
+    box-shadow: 3px 3px #3F3F46;
+    transform: scale3d(1.006, 1.006, 1);
+    transition: box-shadow 0.5s ease-in-out;
+    transition: transform 0.5s;
+  }
+
+  div.preview {
+    background: url('http://placecage.com/c/455/200') left top no-repeat;
+      min-height: 200px;
+      width: 100%;
+  }
+
+  div.info {
+    color: @yellow;
+    padding: 10px;
+
+    h4, p { margin: 0; }
+    h4 { margin-bottom: 5px; }
+    p { margin-bottom: 3px; }
+
+    span {
+      &.ob-key { color: @white; }
+      &.key { color: @orchid; }
+      &.int { color: @purple; }
+    }
+  }
+}
+
