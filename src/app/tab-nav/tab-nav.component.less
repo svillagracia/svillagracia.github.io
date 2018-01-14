@@ -9,22 +9,25 @@ div.tab-nav {
     list-style: none;
     padding: 0;
 
-    a {
-      &.active {
-        li.tab {
-          background: #1A1A1A;
-        }
-      }
-
       li.tab {
         border-right: 1px solid #252526;
         display: inline-block;
         background: #2D2D2D;
         text-align: center;
+        padding: 0;
+        position: relative;
           height: 37px;
           width: 175px;
 
-        text-decoration: none;
+
+        a {
+          text-decoration: none;
+
+          &.active {
+            p {
+              background: #1A1A1A;
+            }
+          }
 
         p {
           color: @white;
@@ -32,6 +35,14 @@ div.tab-nav {
             height: 100%;
             width: 100%;
         }
+      }
+
+      i.closer {
+        color: @white;
+        position: absolute;
+        z-index: 999;
+          right: 10px;
+          top: 10px;
       }
     }
   }

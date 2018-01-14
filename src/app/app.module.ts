@@ -12,6 +12,8 @@ import { ProjectsComponent } from './projects/projects.component';
 import { FooterComponent } from './footer/footer.component';
 import { TabNavComponent } from './tab-nav/tab-nav.component';
 import { SkillComponent } from './skill/skill.component';
+import { ProjectCardComponent } from './projects/project-card/project-card.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { SkillComponent } from './skill/skill.component';
     ProjectsComponent,
     FooterComponent,
     TabNavComponent,
-    SkillComponent
+    SkillComponent,
+    ProjectCardComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

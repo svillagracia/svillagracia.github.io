@@ -3,8 +3,9 @@
 div.row {
 
   div.col-md-3.icons {
-    height: 100vh;
     background: #333333;
+    z-index: 99;
+      height: 100vh;
 
     ul {
       color: #ADADAD;
@@ -55,8 +56,18 @@ div.row {
 
       li {
 
+        p:hover { background: #2A2D2E; }
+
         &.projects {
           cursor: default;
+
+          ul.project-list {
+            li {
+              p {
+
+              }
+            }
+          }
         }
 
         a {
@@ -64,7 +75,7 @@ div.row {
           text-decoration: none;
 
           &.active {
-            p {background: #3F3F46; }
+            p { background: #3F3F46; }
           }
 
           p {

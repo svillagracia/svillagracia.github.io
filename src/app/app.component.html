@@ -1,9 +1,9 @@
 <div class="row">
   <div class="col-md-2 navigator">
-    <app-nav></app-nav>
+    <app-nav [links]="links" (linkToAdd)="addEditor($event)"></app-nav>
   </div>
   <div class="col-md-10 col-md-offset-2">
-    <app-tab-nav class="tab-nav"></app-tab-nav>
+    <app-tab-nav *ngIf="links.length" class="tab-nav" [links]="links" (linkToClose)="closeEditor($event)"></app-tab-nav>
     <div class="outlet">
       <router-outlet></router-outlet>
     </div>

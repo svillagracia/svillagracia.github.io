@@ -1,20 +1,13 @@
 <div class="tab-nav">
   <ul class="tabs col-md-12">
-    <a [routerLink]="['homepage']" routerLinkActive="active">
-      <li class="tab col-md-1">
-        <p><i class="fa fa-file-o"></i> homepage</p>
-      </li>
-    </a>
-    <a [routerLink]="['about']" routerLinkActive="active">
-      <li class="tab col-md-1">
-        <p><i class="fa fa-file-o"></i> about</p>
-      </li>
-    </a>
-    <a [routerLink]="['repertoire']" routerLinkActive="active">
-      <li class="tab col-md-1">
-        <p><i class="fa fa-file-o"></i> repertoire</p>
-      </li>
-    </a>
+    <li *ngFor="let link of links" class="tab col-md-1">
+      <a [routerLink]="[link.url]" routerLinkActive="active">
+        <p>
+          <i class="fa fa-file-o"></i> {{ truncateString(link.name) }}
+        </p>
+      </a>
+      <i (click)="close(link.url); $event.stopPropagation();" class="fa fa-close closer"></i>
+    </li>
   </ul>
   <div class="ellipsis">
     <i class="fa fa-ellipsis-h"></i>
