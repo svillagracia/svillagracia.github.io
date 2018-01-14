@@ -25,8 +25,8 @@
       </p>
     </div>
     <ul *ngIf="editors">
-      <li *ngFor="let link of links">
-        <a [routerLink]="link.url" routerLinkActive="active">
+      <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" *ngFor="let link of links">
+        <a [routerLink]="link.url">
           <p>
             <i class="fa fa-file-o"></i> {{ truncateString(link.name) }}
           </p>
@@ -38,18 +38,18 @@
       </p>
     </div>
     <ul *ngIf="openRoot">
-      <li (click)="openEditor({ url: 'homepage', name: 'homepage.component.html', tab: 'homepage' })">
-        <a [routerLink]="['homepage']" routerLinkActive="active">
+      <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="openEditor({ url: 'homepage', name: 'homepage.component.html', tab: 'homepage' })">
+        <a [routerLink]="['homepage']">
           <p><i class="fa fa-file-o"></i> homepage.comp...</p>
         </a>
       </li>
-      <li (click)="openEditor({ url: 'about', name: 'about.component.html', tab: 'about' })">
-        <a [routerLink]="['about']" routerLinkActive="active">
+      <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="openEditor({ url: 'about', name: 'about.component.html', tab: 'about' })">
+        <a [routerLink]="['about']">
           <p><i class="fa fa-file-o"></i> about.compone...</p>
         </a>
       </li>
-      <li (click)="openEditor({ url: 'repertoire', name: 'repertoire.component.html', tab: 'repertoire' })">
-        <a [routerLink]="['repertoire']" routerLinkActive="active">
+      <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="openEditor({ url: 'repertoire', name: 'repertoire.component.html', tab: 'repertoire' })">
+        <a [routerLink]="['repertoire']">
           <p><i class="fa fa-file-o"></i> repertoire.co...</p>
         </a>
       </li>
@@ -58,36 +58,41 @@
           <i *ngIf="!projects" class="fa fa-caret-right"></i><i *ngIf="projects" class="fa fa-caret-down"></i>
           <i *ngIf="!projects" class="fa fa-folder-o"></i><i *ngIf="projects" class="fa fa-folder-open-o"></i> projects
         </p>
-        <ul *ngIf="projects" class="project-list">
-          <li (click)="openEditor({ url: 'projects', name: 'projects.component.html', tab: 'projects' })">
-            <a [routerLink]="['projects']" routerLinkActive="active">
-              <p><i class="fa fa-file-o"></i> projects.co...</p>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <p><i class="fa fa-file-o"></i> Plymouth-Le...</p>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <p><i class="fa fa-file-o"></i> nomadic-admin</p>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <p><i class="fa fa-file-o"></i> alaska-infl...</p>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <p><i class="fa fa-file-o"></i> MicrosoftCy...</p>
-            </a>
-          </li>
-        </ul>
       </li>
+      <ul *ngIf="projects" class="project-list">
+        <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="openEditor({ url: 'projects', name: 'projects.component.html', tab: 'projects' })">
+          <a [routerLink]="['projects']">
+            <p><i class="fa fa-file-o"></i> projects.co...</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <p><i class="fa fa-file-o"></i> Plymouth-Le...</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <p><i class="fa fa-file-o"></i> nomadic-admin</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <p><i class="fa fa-file-o"></i> alaska-infl...</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <p><i class="fa fa-file-o"></i> alaska-styl...</p>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <p><i class="fa fa-file-o"></i> MicrosoftCy...</p>
+          </a>
+        </li>
+      </ul>
       <li>
-        <a href="https://resume.creddle.io/resume/i1guhgbqeko" target="blank">
+        <a href="../../assets/downloads/Sean_Villagracia_01-2018.pdf" target="blank">
           <p><i class="fa fa-file-o"></i> resum&eacute;.pdf</p>
         </a>
       </li>

@@ -55,28 +55,14 @@ div.row {
       padding: 0 0 0 0;
 
       li {
+        &:hover { background: #2A2D2E; }
+        &.active, &.active:hover { background: #3F3F46; }
 
-        p:hover { background: #2A2D2E; }
-
-        &.projects {
-          cursor: default;
-
-          ul.project-list {
-            li {
-              p {
-
-              }
-            }
-          }
-        }
+        &.projects { cursor: default; }
 
         a {
           color: @white;
           text-decoration: none;
-
-          &.active {
-            p { background: #3F3F46; }
-          }
 
           p {
             margin: 3px 0;
@@ -89,7 +75,16 @@ div.row {
           margin: 3px 0 0 -14px;
         }
       }
+
+      ul.project-list {
+        li {
+          p {
+            margin-left: 15px;
+          }
+        }
+      }
     }
+
     div.copy {
       position: absolute;
         bottom: 0;
